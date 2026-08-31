@@ -17,7 +17,7 @@ provides an overall satisfaction and feedback report
 2.  **View Feedback** 
 3.  **Feedback Report** 
 4.  **Exit** 
- Users choose an option to determine which function to run
+Users choose an option to determine which function to run
 
 **Give feedback**
 
