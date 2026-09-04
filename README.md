@@ -24,17 +24,17 @@ Users choose an option to determine which function to run
 - When the user choose 1, give_feedback() function is called. Then, the function will ask the user to enter name and 
 ratings for 5 criterions
 ```python
-1. Cleanliness = int(input("- Cleanliness: "))
-2. Room_quality = int(input("- Room quality: "))
-3. Staff_service = int(input("- Staff service: "))
-4. Price = int(input("- Price: "))
-5. Location = int(input("- Location: "))
- 
- Each rating must be between 1-5
- if 1 <= Cleanliness <= 5:
+while True: 
+        Cleanliness = (input("\n- Cleanliness:")).strip()
+        if Cleanliness.isdigit():
+            Cleanliness = int(Cleanliness)
+            if 1 <= Cleanliness <= 5:
                 break
             else:
                 print("Invalid input! Please rating from 1 - 5!")
+        else: 
+            print("Invalid input! Please rating from 1 - 5!")
+ 
 ```
  the same process is used for other criterions
 
